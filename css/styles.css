@@ -1,7 +1,7 @@
 /* Bold */
 @font-face {
     font-family: "Neue Montreal";
-    src: url(/font/PPNeueMontreal-Bold.otf);
+    src: url(../font/PPNeueMontreal-Bold.otf);
     font-weight: bold;
     font-style: normal;
 }
@@ -9,7 +9,7 @@
 /* Semibold */
 @font-face {
     font-family: "Neue Montreal";
-    src: url(/font/PPNeueMontreal-SemiBolditalic.otf);
+    src: url(../font/PPNeueMontreal-SemiBolditalic.otf);
     font-weight: 700;
     font-style: italic;
 }
@@ -17,7 +17,7 @@
 /* Book */
 @font-face {
     font-family: "Neue Montreal";
-    src: url(/font/PPNeueMontreal-Book.otf);
+    src: url(../font/PPNeueMontreal-Book.otf);
     font-weight: 450;
     font-style: normal;
 }
@@ -25,7 +25,7 @@
 /* Italic */
 @font-face {
     font-family: "Neue Montreal";
-    src: url(/font/PPNeueMontreal-Italic.otf);
+    src: url(../font/PPNeueMontreal-Italic.otf);
     font-weight: 450;
     font-style: italic;
 }
@@ -33,7 +33,7 @@
 /* Medium */
 @font-face {
     font-family: "Neue Montreal";
-    src: url(/font/PPNeueMontreal-Medium.otf);
+    src: url(../font/PPNeueMontreal-Medium.otf);
     font-weight: 530;
     font-style: normal;
 }
@@ -41,7 +41,7 @@
 /* Thin */
 @font-face {
     font-family: "Neue Montreal";
-    src: url(/font/PPNeueMontreal-Thin.otf);
+    src: url(../font/PPNeueMontreal-Thin.otf);
     font-weight: 200;
     font-style: normal;
 }
@@ -53,7 +53,7 @@
 }
 
 body {
-    font-family: "Neue Montreal";
+    font-family: "Neue Montreal", "Helvetica";
     font-weight: 200;
     font-style: normal;
     text-align: left;
