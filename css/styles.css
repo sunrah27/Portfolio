@@ -1,0 +1,176 @@
+/* Bold */
+@font-face {
+    font-family: "Neue Montreal";
+    src: url(./font/PPNeueMontreal-Bold.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Semibold */
+@font-face {
+    font-family: "Neue Montreal";
+    src: url(./font/PPNeueMontreal-SemiBolditalic.otf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Book */
+@font-face {
+    font-family: "Neue Montreal";
+    src: url(./font/PPNeueMontreal-Book.otf);
+    font-weight: 450;
+    font-style: normal;
+}
+
+/* Italic */
+@font-face {
+    font-family: "Neue Montreal";
+    src: url(./font/PPNeueMontreal-Italic.otf);
+    font-weight: 450;
+    font-style: italic;
+}
+
+/* Medium */
+@font-face {
+    font-family: "Neue Montreal";
+    src: url(./font/PPNeueMontreal-Medium.otf);
+    font-weight: 530;
+    font-style: normal;
+}
+
+/* Thin */
+@font-face {
+    font-family: "Neue Montreal";
+    src: url(./font/PPNeueMontreal-Thin.otf);
+    font-weight: 200;
+    font-style: normal;
+}
+
+*{
+    color: white;
+    background-color: #0d0d0d;
+    backface-visibility: visible;
+}
+
+body {
+    font-family: "Neue Montreal";
+    font-weight: 200;
+    font-style: normal;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.mainBorder {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    right: 50px;
+    left: 50px;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight:bold;
+}
+
+.subheading {
+    font-weight: 100;
+    font-size: 48px;
+    margin: 0;
+}
+
+#role {
+    font-size: 32px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+nav {
+    padding-top: 40px;
+}
+
+.content {
+    margin: 10px;
+    cursor: pointer;
+    width: 19%;
+    text-align: left;
+    letter-spacing: 3px;
+}
+
+.wrapper {
+    width: 60%;
+    height: 91%;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    margin: 30px;
+    border: 1px solid white;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+.maincontent {
+    display: none;
+    padding: 20px;
+    margin: 10px;
+    text-align: right;
+    font-size: 32px;
+
+}
+
+.theme {
+    line-height: 1;
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+    display: flex;
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    cursor: pointer;
+    column-gap: 15px;
+    font-size: 32px;
+}
+
+.themeColors {
+    display: flex;
+    column-gap: 20px;
+}
+
+.gitHub {
+    display: flex;
+    column-gap: 5px;
+}
+
+.lightTheme {
+    display: flex;
+    column-gap: 5px;
+}
+
+.darkTheme {
+    display: flex;
+    column-gap: 5px;
+}
+
+h2:hover {
+    color: #808080;
+}
