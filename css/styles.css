@@ -118,7 +118,7 @@ nav {
     right: 20px;
     bottom: 20px;
     margin: 30px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     overflow: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
