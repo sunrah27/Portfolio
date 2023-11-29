@@ -17,17 +17,36 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // function showContent(contentId) {
+    //     mainContentElements.forEach(function (element) {
+    //         element.style.display = 'none';
+    //     });
+
+    //     var selectedMainContent = document.getElementById('body_' + contentId.slice(-1));
+    //     if(selectedMainContent) {
+    //     selectedMainContent.style.display = 'block';
+    //     }
+    // }
+
     function showContent(contentId) {
         mainContentElements.forEach(function (element) {
             element.style.display = 'none';
         });
 
-        var selectedMainContent = document.getElementById('body_' + contentId.slice(-1));
-        if(selectedMainContent) {
-        selectedMainContent.style.display = 'block';
+        var selectedMainContent = document.getElementById('body_' + contentId);
+        if (selectedMainContent) {
+            // Use AJAX to fetch content from external file in the ../assets/ folder
+            var contentFileName = 'assets/' + contentId + '.html';
+            fetch(contentFileName)
+                .then(response => response.text())
+                .then(data => {
+                    selectedMainContent.innerHTML = data;
+                    selectedMainContent.style.display = 'block';
+                })
+                .catch(error => console.error('Error fetching content:', error));
         }
     }
-
+    
     var lightThemeElement = document.querySelector('.lightTheme');
     var darkThemeElement = document.querySelector('.darkTheme');
 

@@ -56,7 +56,7 @@
     --b-position: 50px;
 
     /* WRAPPER HEIGHT*/
-    --w-height: calc(100%vh-40px)px;
+    --w-height: calc(100%vh-40px);
 }
 
 body {
@@ -174,7 +174,6 @@ h2 {
     transform-origin: left bottom;
     transform: rotate(-90deg);
     white-space: nowrap;
-    cursor: pointer;
     column-gap: 15px;
     font-size: 32px;
 }
