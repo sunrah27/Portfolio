@@ -17,17 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // function showContent(contentId) {
-    //     mainContentElements.forEach(function (element) {
-    //         element.style.display = 'none';
-    //     });
-
-    //     var selectedMainContent = document.getElementById('body_' + contentId.slice(-1));
-    //     if(selectedMainContent) {
-    //     selectedMainContent.style.display = 'block';
-    //     }
-    // }
-
     function showContent(contentId) {
         mainContentElements.forEach(function (element) {
             element.style.display = 'none';
@@ -35,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var selectedMainContent = document.getElementById('body_' + contentId);
         if (selectedMainContent) {
-            // Use AJAX to fetch content from external file in the ../assets/ folder
             var contentFileName = 'assets/' + contentId + '.html';
             fetch(contentFileName)
                 .then(response => response.text())
