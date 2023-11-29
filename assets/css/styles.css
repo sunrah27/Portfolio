@@ -93,6 +93,7 @@ body {
     width: 25%;
     padding-left: 20px;
     padding-top: 20px;
+
     position: relative;
 }
 
@@ -107,7 +108,7 @@ h1 {
 
 #role {
     font-size: 32px;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 nav {
@@ -157,7 +158,6 @@ h2 {
     font-size: 48px;
     margin: 0;
     padding-bottom: 50px;
-    position: sticky;
 }
 
 .mainContent p {
@@ -198,42 +198,23 @@ h2 {
     column-gap: 5px;
 }
 
-.navContent, .gitHub, .lightTheme, .darkTheme {
-    cursor: pointer;
-}
-
-.navContent:hover h2,
-.navContent:hover h2 ._box,
-.gitHub:hover, 
-.lightTheme:hover, 
-.darkTheme:hover {
-    color: var(--d-t-hover);
-}
-
-.navContent:hover h2 ._box,
-.gitHub:hover ._box, 
-.lightTheme:hover ._box, 
-.darkTheme:hover ._box {
-    display: inline-block;
-    transition: transform 0.3s ease;
-    transform: rotate(45deg);
-}
-
-.navContent h2:not(:hover) ._box,
-.gitHub:not(:hover) ._box, 
-.lightTheme:not(:hover) ._box, 
-.darkTheme:not(:hover) ._box {
-    display: inline-block;
-    transition: transform 0.3s ease;
-    transform: rotate(0);
+.hide {
+    display: none;
 }
 
 /* ANIMATIONS */
-.typing {
-    border-right: 2px solid transparent;
+.typingT {
+    border-right: 0 solid transparent;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 1s steps(28) forwards;
+    animation: typing 2s steps(30) forwards;
+}
+
+.typingR {
+    border-right: 0 solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(30) forwards;
 }
 
 @keyframes typing {
@@ -244,7 +225,7 @@ h2 {
 .fade-in-nav {
     opacity: 0;
     animation: fade-in 1s forwards;
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 
 .fade-in {
@@ -254,4 +235,102 @@ h2 {
 
 @keyframes fade-in {
     to { opacity: 1;}
+}
+
+/* PROJECTS CSS*/ 
+.my-container {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-box {
+    margin-bottom: 50px;
+    height: 160px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:flex-end;
+    width: calc(50%);
+}
+
+.my-content-block {
+    display: inline-block;
+    margin-right: 20px;
+    height: 100%;
+    vertical-align: top;
+}
+
+.my-image-block {
+    display: inline-block;
+}
+
+.my-img {
+    width: auto;
+    max-width: 250px;
+    height: auto;
+    float: right;
+    margin-right: 20px;
+    box-shadow: 10px 10px var(--d-t-color);
+    border: 1px solid var(--d-t-color);
+}
+
+.my-h4 {
+    font-family: "Neue Montreal", "Helvetica";
+    font-weight: 200;
+    font-style: normal;
+    text-align: right;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    color: var(--d-t-color);
+}
+
+.my-icons {
+    display: flex;
+    margin-top: 50px;
+}
+
+.my-icon {
+    font-family: "Neue Montreal", "Helvetica";
+    font-weight: 200;
+    font-style: normal;
+    text-align: right;
+    font-size: 36px;
+    margin: 10px;
+    padding: 0;
+    color: var(--d-t-color);
+    text-decoration: none;
+}
+
+/* HOVER EFFECTS */
+.navContent, .gitHub, .lightTheme, .darkTheme, .my-icon {
+    cursor: pointer;
+}
+
+.navContent:hover h2, .navContent:hover h2 ._box, .gitHub:hover, .lightTheme:hover, .darkTheme:hover, .my-icon:hover {
+    color: var(--d-t-hover);
+}
+
+.navContent:hover h2 ._box, .gitHub:hover ._box, .lightTheme:hover ._box, .darkTheme:hover ._box {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    transform: rotate(45deg);
+}
+
+.navContent h2:not(:hover) ._box, .gitHub:not(:hover) ._box, .lightTheme:not(:hover) ._box, .darkTheme:not(:hover) ._box {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    transform: rotate(0);
+}
+
+.my-img:hover {
+    box-shadow: 10px 10px var(--d-t-hover);
+    border: 1px solid var(--d-t-hover);
+}
+
+@media (max-width: 1770px) {
+    .my-box {
+        width: 100%;
+    }
 }
