@@ -101,6 +101,8 @@ h1 {
     margin: 0;
     line-height: 3rem;
     font-size: 60px;
+    text-align: left;
+    display: inline-block;
 }
 
 #role {
@@ -141,7 +143,7 @@ h2 {
     display: none;
 }
 
-.maincontent {
+.mainContent {
     display: none;
     padding: 20px 0px 20px 20px;
     margin: 10px;
@@ -149,7 +151,7 @@ h2 {
     font-size: 32px;
 }
 
-.subheading {
+.subHeading {
     display: block;
     font-weight: 100;
     font-size: 48px;
@@ -158,7 +160,7 @@ h2 {
     position: sticky;
 }
 
-.maincontent p {
+.mainContent p {
     margin: 5px 0;
     line-height: 1.5em;
 }
@@ -225,4 +227,32 @@ h2 {
     display: inline-block;
     transition: transform 0.3s ease;
     transform: rotate(0);
+}
+
+/* ANIMATIONS */
+.typing {
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(28) forwards;
+}
+
+@keyframes typing {
+    from { width: 0;}
+    to { width: 100%;}
+}
+
+.fade-in-nav {
+    opacity: 0;
+    animation: fade-in 1s forwards;
+    animation-delay: 1s;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in {
+    to { opacity: 1;}
 }

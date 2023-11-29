@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     
     var contentElements = document.querySelectorAll('.navContent');
-    var mainContentElements = document.querySelectorAll('.maincontent');
+    var mainContentElements = document.querySelectorAll('.mainContent');
 
     contentElements.forEach(function (element) {
         element.addEventListener('click', function () {
