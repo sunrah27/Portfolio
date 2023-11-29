@@ -117,7 +117,7 @@ h2 {
     font-size: 32px;
 }
 
-.content {
+.navContent {
     text-align: left;
     letter-spacing: 3px;
     margin: 5px 0;
@@ -190,28 +190,26 @@ h2 {
 .lightTheme {
     display: flex;
     column-gap: 5px;
-    --d-t-color: var(--d-t-color-light);
 }
 
 .darkTheme {
     display: flex;
     column-gap: 5px;
-    --d-t-color: var(--d-t-color-light);
 }
 
-.content, .gitHub, .lightTheme, .darkTheme {
+.navContent, .gitHub, .lightTheme, .darkTheme {
     cursor: pointer;
 }
 
-.content:hover h2,
-.content:hover h2 ._box,
+.navContent:hover h2,
+.navContent:hover h2 ._box,
 .gitHub:hover, 
 .lightTheme:hover, 
 .darkTheme:hover {
     color: var(--d-t-hover);
 }
 
-.content:hover h2 ._box,
+.navContent:hover h2 ._box,
 .gitHub:hover ._box, 
 .lightTheme:hover ._box, 
 .darkTheme:hover ._box {
@@ -220,7 +218,7 @@ h2 {
     transform: rotate(45deg);
 }
 
-.content h2:not(:hover) ._box,
+.navContent h2:not(:hover) ._box,
 .gitHub:not(:hover) ._box, 
 .lightTheme:not(:hover) ._box, 
 .darkTheme:not(:hover) ._box {

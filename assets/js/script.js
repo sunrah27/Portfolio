@@ -1,18 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     new JParticles.Particle('#demo', {
         color: '#505050',
-        lineShape: 'sphere',
-        range: 200,
+        lineShape: 'spider',
+        range: 2000,
         proximity: 100,
         parallax: false,
     })
     
-    var contentElements = document.querySelectorAll('.content');
+    var contentElements = document.querySelectorAll('.navContent');
     var mainContentElements = document.querySelectorAll('.maincontent');
-
-    var lightThemeElement = document.querySelector('.lightTheme');
-    var darkThemeElement = document.querySelector('.darkTheme');
 
     contentElements.forEach(function (element) {
         element.addEventListener('click', function () {
@@ -30,6 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
         selectedMainContent.style.display = 'block';
         }
     }
+
+    var lightThemeElement = document.querySelector('.lightTheme');
+    var darkThemeElement = document.querySelector('.darkTheme');
 
     lightThemeElement.addEventListener('click', function () {
         document.documentElement.style.setProperty('--d-bg-color', '#f5f5f5');
