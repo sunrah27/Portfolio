@@ -16,14 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var selectedMainContent = document.getElementById('body_' + contentId);
         if (selectedMainContent) {
-            var contentFileName = 'assets/' + contentId + '.html';
-            fetch(contentFileName)
-                .then(response => response.text())
-                .then(data => {
-                    selectedMainContent.innerHTML = data;
-                    selectedMainContent.style.display = 'block';
-                })
-                .catch(error => console.error('Error fetching content:', error));
+            selectedMainContent.style.display = 'block';
         }
     }
     

@@ -177,7 +177,7 @@ h2 {
     line-height: 1;
     position: absolute;
     left: 40px;
-    bottom: 50px;
+    bottom: 48px;
     display: flex;
     transform-origin: left bottom;
     transform: rotate(-90deg);
@@ -241,6 +241,10 @@ h2 {
     align-items: flex-end;
 }
 
+.my-container a {
+    text-decoration: none;
+}
+
 .my-box {
     margin-bottom: 50px;
     /* height: 160px; */
@@ -255,20 +259,6 @@ h2 {
     vertical-align: top;
 }
 
-/* .my-image-block {
-    display: inline-block;
-}
-
-.my-img {
-    width: auto;
-    max-width: 250px;
-    height: auto;
-    float: right;
-    margin-right: 20px;
-    box-shadow: 10px 10px var(--d-t-color);
-    border: 1px solid var(--d-t-color);
-} */
-
 .my-h4 {
     font-family: "Neue Montreal", "Helvetica";
     font-weight: 200;
@@ -281,16 +271,45 @@ h2 {
 }
 
 .my-project {
-    color: #f5f5f5;
+    color: var(--d-t-color);
+    text-align: right;
+}
+
+#body_skillset ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 ul li {
+    position: relative;
+    padding-right: 40px;
     margin-bottom: 20px;
+    line-height: 1.5;
 }
 
-ul li::after {
-    padding-left: 20px;
+ul li::before {
     content: '■';
+    position: absolute;
+    right: 0;
+}
+
+.constactContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.contactDetails p a {
+    color: var(--d-t-color);
+}
+
+#body_about p {
+    text-align: justify;
+    padding: 10px 0;
+}
+
+#body_about h4 {
+    padding-bottom: 20px;
 }
 
 /* HOVER EFFECTS */
@@ -298,7 +317,7 @@ ul li::after {
     cursor: pointer;
 }
 
-.navContent:hover h2, .navContent:hover h2 ._box, .gitHub:hover, .lightTheme:hover, .darkTheme:hover, .my-icon:hover, .gitHub_link:hover, .my-box a:hover .my-h4, .my-box a:hover .my-project{
+.navContent:hover h2, .navContent:hover h2 ._box, .gitHub:hover, .lightTheme:hover, .darkTheme:hover, .my-icon:hover, .gitHub_link:hover, .my-box:hover .my-h4, .my-box:hover .my-project, .contactDetails p a:hover {
     color: var(--d-t-hover);
 }
 
@@ -312,9 +331,4 @@ ul li::after {
     display: inline-block;
     transition: transform 0.3s ease;
     transform: rotate(0);
-}
-
-.my-img:hover {
-    box-shadow: 10px 10px var(--d-t-hover);
-    border: 1px solid var(--d-t-hover);
 }
