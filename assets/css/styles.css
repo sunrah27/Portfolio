@@ -193,7 +193,7 @@ nav {
     overflow-y: scroll;
     padding-left: 20px;
     padding-right: 20px;
-    height: calc(100% - var(--b-position) - var(--b-position));
+    height: 100%;
     scrollbar-width: none;
     -ms-overflow-style: none;  /* IE and Edge */
 }
